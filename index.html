@@ -392,18 +392,18 @@
    </div>
 </footer>
 <!-- modal -->
-<div class="backdrop  " data-modal>
+<div class="backdrop is-hidden " data-modal>
    <div class="modal">
-      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia illum inventore veritatis, deserunt sint ipsa odit exercitationem rem ex, incidunt sequi quasi, odio maiores fugiat quos. Ratione, enim similique.</p> -->
+    
       <button data-modal-close type="button" class="icon-close "> 
          <svg class="close-icon" width="11" height="11">
             <use href="./imagesforhomwork/sprite.svg#icon-Vector-2"></use>
          </svg>
       </button>
       <div class="modal-inner">
-        <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
+      <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="form" name="main-form" autocomplete="on" novalidate>
-
+          
            <div class="form-field">
 
            <label class="form-field-label" for="user-name">Имя</label>
@@ -413,11 +413,10 @@
             <svg class="form-field-icon" width="12" height="12">
             <use href="./imagesforhomwork/sprite.svg#icon-human"></use>
             </svg>
-
            </div>
            </div>
-
-           <div class="form-field">
+           
+         <div class="form-field">
            <label class="form-field-label" for="user-celephone">
            Телефон
            </label>
@@ -427,11 +426,11 @@
            <svg class="form-field-icon" width="12" height="12">
             <use href="./imagesforhomwork/sprite.svg#icon-celephone2"></use>
             </svg>
-
+         </div>
            </div>
-           </div>
+           
 
-           <div class="form-field">
+         <div class="form-field">
            <label class="form-field-label" for="user-mail">Почта</label>
 
             <div class="form-field-inner">
@@ -439,18 +438,23 @@
            <svg class="form-field-icon" width="12" height="12">
             <use href="./imagesforhomwork/sprite.svg#icon-letter"></use>
             </svg>
-
+         </div>
            </div>
-           </div>   
+           
 
-            <div class="form-field">
+           <div class="form-field">            
             <label class="form-field-label" for="user-comment">Комментарий</label>
             <textarea class="form-field-textarea" name="user-comment" id="user-comment" rows="10" placeholder="Введите текст" ></textarea>
+
             </div>
-            
-         <button class="button-modal" type="submit">Отправить</button>
-        </form>
-         
+
+         <div class="form-field-checkbox">
+            <label class="check-box-label">
+               <input type="checkbox">
+            </label>
+         </div>
+         <button class="send-button" type="submit">Отправить</button>
+        </form>   
       </div>
    </div>
 </div>
