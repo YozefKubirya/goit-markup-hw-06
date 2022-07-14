@@ -945,8 +945,8 @@ fill:currentColor;
 
 .form-field-input:focus,
 .form-field-input:hover,
- .form-field-input:hover ~ .form-field-icon,
- .form-field-input:focus ~ .form-field-icon{
+ .form-field-input:hover + .form-field-icon,
+ .form-field-input:focus + .form-field-icon{
    fill: #2196F3;
    border-color: #2196F3;
    outline: none;}
