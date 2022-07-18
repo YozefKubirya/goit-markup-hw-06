@@ -1103,9 +1103,60 @@ fill:currentColor;
    margin-top: 20px;
    margin-bottom: 30px;
 }
-
+ 
+/* .checkbox-control{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+   width: 15px;
+   height: 15px;
+} */
 
 .checkbox-icon{
+  opacity: 0;
+  transition: opacity 250ms var(--cubic-bazer);
+   width: 16px;
+   height: 16px;
+   border-radius:2px;
+   background-color: #FFFFFF;
+   transition: background-color  250ms var(--cubic-bazer);
+   border: 2px solid var(--second-text-color);
+  transition:  border 250ms var(--cubic-bazer);  
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+}
+.checkbox:checked + .checkbox-icon{
+   opacity: 1;
+   transition: opacity 250ms var(--cubic-bazer);
+   background-color: #2196F3;
+   transition: background-color 250ms var(--cubic-bazer);
+   border-color: #2196F3;
+   transition: border 250ms var(--cubic-bazer);
+      
+
+}
+
+.checkbox-icon1{
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+   opacity: 1;
+   transition: opacity 250ms var(--cubic-bazer);
+   
+}
+.checkbox:checked ~ .checkbox-icon1{
+   opacity: 0;
+   transition: opacity 250ms var(--cubic-bazer);
+}
+ /* .checkbox-icon{
    display: inline-block;
    position: absolute;
    border: 2px solid var(--second-text-color);
@@ -1119,12 +1170,4 @@ fill:currentColor;
    transition: background-color 250ms var(--cubic-bazer),
    border-color 250ms var(--cubic-bazer);
   
-}
-.checkbox:checked ~ .checkbox-icon{
-   
-   transition: background-color 250ms var(--cubic-bazer),
-   border-color 250ms var(--cubic-bazer);
-   border-color: #2196F3;
-   background-color: #2196F3;
-   
-}
+}  */
