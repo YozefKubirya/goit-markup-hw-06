@@ -735,6 +735,7 @@ text-transform: uppercase;
          margin-top: 20px;
          padding: 16px 16px;
          transition: border-color 250ms var(--cubic-bazer);
+         color: var(--accent-text-color-white);
 }
 
 .footer-mail::placeholder{
